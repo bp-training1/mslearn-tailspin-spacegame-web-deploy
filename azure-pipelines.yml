@@ -120,9 +120,9 @@ stages:
     - group: 'Release'
     steps: 
     - task: UseDotNet@2
-      displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
+      displayName: 'Use .NET Core SDK 2.1.802'
       inputs:
-        version: '$(dotnetSdkVersion)'
+        version: '2.1.802'
     - task: DotNetCoreCLI@2
       displayName: 'Build the project - $(buildConfiguration)'
       inputs:
